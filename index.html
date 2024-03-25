@@ -1,14 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  |<script src="sripts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/2bde5a7f0c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo3.jpg" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Aaron</span><br />
+            Otu from Ghana
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------about---------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A confident, outspoken, well-experienced, hardworking and business
+              minded second year Bsc .Computer Science student at the Kwame
+              Nkrumah University of Science and Technology seeking internship in
+              your prestigious organization to utilize and build upon my
+              exclusive skills for societal and personal benefits.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development </span><br />Web app Development</li>
+                <!-- <li>
+                  <span>App Development</span><br />Building Android/IOS apps
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023- Present</span><br />Intership at Ghana Revenue
+                  Authority
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - Present</span><br />Kwame Nkrumah University Of
+                  Science And Technology
+                </li>
+                <li>
+                  <span>2017 - 2020 </span><br />Koforidua Senior High Technical
+                  School
+                </li>
+                <li>
+                  <span>2014 - 2017</span><br />Ghateco Preparatory School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------services---------------- -->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>UI/UX Design</h2>
+              <p>I specialize in crafting intuitive and visually engaging user interfaces and experiences tailored to optimize user interaction and satisfaction.</p>
+               <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>Web Design</h2>
+              <p>I offer comprehensive web development services, leveraging cutting-edge technologies to create scalable and responsive websites tailored to meet our clients' unique needs and objectives.</p>
+               <a href="#">Learn more</a>
+            </div>
+            
+            </div>
+          
+          </div>
+
+        </div>
+      </div> 
+
+<!-- ---------------------------------Portfolio----------------------------- -->
+   <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.jpg" >
+          <div class="layer">
+            <h3>Music Recommender</h3>
+            <p>This is a machine learning project that to predict the type of song given the gender and the age of the user</p>
+            <a href="https://github.com/AaronOtu/Music-reommender"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div><div class="work">
+          <img src="images/work-2.jpg" >
+          <div class="layer">
+            <h3>Customer Relations Management</h3>
+            <p>This project is about customer interactions, keeping records of a customer and the data can be manipulated </p>
+            <a href="https://github.com/AaronOtu/DjangoCRM"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.jpg" class = "snake">
+          <div class="layer">
+            <h3>Snake Game</h3>
+            <div><p>Interative game, In which user controls snake to eat up food, growing in length and avoiding collision</p></div>
+            
+            <a href="https://github.com/AaronOtu/SnakeGame"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+
+    </div>
+   </div>
+
+   <!-- -------------------contact-------------------- -->
+    
+
+
+
+
+
+
+
+  </body>
 </html>
